@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("enter a four-letter word");
+        String word = myObj.nextLine();
+        word = word.replace("a", "*");
+        word = word.replace("i", "*");
+        word= word.replace("u", "*");
+        word = word.replace("e", "*");
+        word = word.replace("o", "*");
+        System.out.println(str);
+    }
+}
