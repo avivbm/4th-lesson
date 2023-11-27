@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter 3 names");
+    String str1, str2, str3;
+    String name1 = myObj.nextLine();
+    String name2 = myObj.nextLine();
+    String name3 = myObj.nextLine();
+    if (name1.toLowerCase().compareTo(name2.toLowerCase()) <= 0) { str1 = name1; str2 = name2; }
+    else { str1 = name2; str2 = name1; }
+
+    if (name3.toLowerCase().compareTo(str1.toLowerCase()) < 0) { str3 = str2; str2 = str1; str1 = name3; }
+    else if (name3.toLowerCase().compareTo(str2.toLowerCase()) < 0) { str3 = str2; str2 = name3; }
+    else { str3 = name3; }
+
+    System.out.println("\n" + str1 + "\n" + str2 + "\n" + str3);
+  }
+}
