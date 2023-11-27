@@ -1,0 +1,14 @@
+import java.util.Random;
+
+class Main {
+  public static void main(String[] args) {
+    Random r = new Random();
+    int num = r.nextInt(100);
+    if (num < 10) { System.out.println("one-digit number"); }
+    else { System.out.println("two-digit number"); }
+    if (num % 2 == 0) { System.out.println("even"); }
+    else { System.out.println("odd"); }
+    if (num % 3 == 0) { System.out.println("divisible by 3"); }
+    else { System.out.println("not divisible by 3"); }
+  }
+}
